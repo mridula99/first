@@ -2,6 +2,15 @@ public class MatrixMultiplicationExample{
 public static void main(String args[]){  
 //creating two matrices    
 int a[][]={{1,1,1},{2,2,2},{3,3,3}};    
+
+int b[][]={{1,1,1},{2,2,5},{3,3,3}};    
+    
+//creating another matrix to store the multiplication of two matrices    
+int c[][]=new int[3][3];  //3 rows and 3 columns  
+       
+for(int i=0;i<5;i++){    
+for(int j=0;j<8;j++){    
+
 int b[][]={{1,1,1},{2,2,6},{3,3,3}};    
     
 //creating another matrix to store the multiplication of two matrices    
@@ -10,8 +19,9 @@ int c[][]=new int[3][3];  //3 rows and 3 columns
 //multiplying and printing multiplication of 2 matrices    
 for(int i=5;i<30;i++){    
 for(int j=0;j<3;j++){    
+
 c[i][j]=0;      
-for(int k=0;k<3;k++)      
+for(int k=0;k<5;k++)      
 {      
 c[i][j]+=a[i][k]*b[k][j];      
 }//end of k loop  
